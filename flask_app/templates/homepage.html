@@ -2,5 +2,12 @@
 
 {% block content %}
   <h1>Welcome</h1>
+  <p>Homepage viewable to all.</p>
+  {% if current_user.is_authenticated %}
+  <h3>Logged in view</h3>
   <p>You are logged in.</p>
+  {% else %}
+  <h3>Logged out view</h3>
+  <p>You are logged out.</p>
+  {% endif %}
 {% endblock %}
