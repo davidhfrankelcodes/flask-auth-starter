@@ -6,7 +6,7 @@ This is a sample Flask application that demonstrates how to use SQLAlchemy to in
 
 1. Clone this repository:
 ```
-git clone git@github.com:davidhfrankelcodes/$REPO
+git clone git@github.com:davidhfrankelcodes/flask-auth-starter.git
 ```
 2. Install the required dependencies:
 ```
