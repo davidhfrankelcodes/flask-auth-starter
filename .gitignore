@@ -1,0 +1,16 @@
+# Local Configs
+venv/
+
+# Database
+instance/
+migrations/
+
+# Secret Configs
+.env
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+app/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
