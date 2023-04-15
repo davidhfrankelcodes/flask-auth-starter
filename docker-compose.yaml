@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: flask-auth-starter
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./instance:/app/instance
