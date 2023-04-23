@@ -27,5 +27,5 @@ python run.py
 
 5. After the database has been created, the prod server can run in docker using
 ```
-docker-compose up -d
+docker-compose up -d --build
 ```
