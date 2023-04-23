@@ -13,19 +13,25 @@ git clone git@github.com:davidhfrankelcodes/flask-auth-starter.git
 pip install -r requirements.txt
 ```
 
-3. Create a new database:
+3. Make a .env file and fill it out.
+```
+cp .env.template .env
+nano .env
+```
+
+4. Create a new database:
 ```
 export FLASK_APP=run.py && flask db init
 flask db migrate
 flask db upgrade
 ```
 
-4. Start the development server:
+5. Start the development server:
 ```
 python run.py
 ```
 
-5. After the database has been created, the prod server can run in docker using
+6. After the database has been created, the prod server can run in docker using
 ```
 docker-compose up -d --build
 ```
