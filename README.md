@@ -1,6 +1,6 @@
 # Flask App
 
-This is a sample Flask application that demonstrates how to use SQLAlchemy to interact with a database.
+This is a sample Flask application that demonstrates how to use SQLAlchemy and SQLite3 to interact with a database.
 
 ## Getting Started
 
