@@ -19,6 +19,14 @@ cp .env.template .env
 nano .env
 ```
 
+```
+FLASK_DEBUG=1
+FLASK_SIGNUP_DISABLED=0
+FLASK_PORT=5000
+FLASK_SECRET_KEY=your-secret-key
+FLASK_SQLALCHEMY_TRACK_MODIFICATIONS=1
+```
+
 4. Create a new database:
 ```
 export FLASK_APP=run.py && flask db init
