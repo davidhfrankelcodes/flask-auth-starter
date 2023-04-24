@@ -11,7 +11,8 @@ login_manager = LoginManager()
 def create_app():
     app = Flask(__name__)
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = os.environ.get(
+        "FLASK_SQLALCHEMY_TRACK_MODIFICATIONS")
     app.config['SECRET_KEY'] = os.environ.get("FLASK_SECRET_KEY")
     app.config['LOGIN_VIEW'] = "auth.login"
     app.config['LOGIN_MESSAGE'] = "Please log in to access this page."
