@@ -37,7 +37,10 @@ def login():
             else:
                 flash('Invalid username or password.')
 
-    return render_template('auth/login.html', form=form)
+    return render_template(
+        'auth/login.html',
+        form=form,
+        signup_disabled=SIGNUP_DISABLED,)
 
 @auth_bp.route('/logout')
 @login_required
@@ -56,7 +59,10 @@ def signup():
         db.session.commit()
         flash('You have successfully registered. You can now log in.')
         return redirect(url_for('auth.login'))
-    return render_template('auth/signup.html', form=form)
+    return render_template(
+        'auth/signup.html', 
+        form=form, 
+        signup_disabled=SIGNUP_DISABLED,)
 
 @login_manager.user_loader
 def load_user(user_id):
