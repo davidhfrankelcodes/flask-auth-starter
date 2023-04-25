@@ -13,12 +13,10 @@ git clone git@github.com:davidhfrankelcodes/flask-auth-starter.git
 pip install -r requirements.txt
 ```
 
-3. Make a .env file and fill it out.
+3. Make a .env file and fill it out like the example below.
 ```
-cp .env.template .env
 nano .env
 ```
-
 ```
 FLASK_DEBUG=1
 FLASK_SIGNUP_DISABLED=0
